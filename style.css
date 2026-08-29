@@ -1,0 +1,108 @@
+/* --- GLOBAL STYLING RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* --- NAVIGATION BAR STYLING --- */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar ul {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #000;
+}
+
+/* --- MAIN LAYOUT & CONTENT STYLING --- */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 20px;
+    margin-top: 50px;
+    background-color: #333;
+    color: white;
+}
