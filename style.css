@@ -24,6 +24,25 @@ body {
     z-index: 100;
 }
 
+.lang-switcher {
+    margin-right: auto;
+    display: flex;
+    border: none;
+    padding: 2px;
+}
+
+.lang-switcher img {
+    cursor: pointer;
+    width: 40px;
+    height: auto;
+    border: 2px solid transparent;
+    transition: transform 0.1s;
+}
+
+.lang-switcher img:hover {
+    transform: scale(1.1);
+}
+
 .logo {
     position: absolute;
     left: 50%;
