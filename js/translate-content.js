@@ -3,16 +3,16 @@ const translations = {
         home: "Home",
         about: "About",
         projects: "Projects",
-        copyright: "© 2026 Marga. All Rights Reserved.",
-        copyright2: "All Wrongs Freely Available.",
+        copyright: "© 2026 Marga. All rights reserved.",
+        copyright2: "All wrongs freely available.",
         greeting: "Welcome to my website, make yourself comfortable.",
     },
     fr: {
         home: "Accueil",
-        about: "A propos",
+        about: "À propos",
         projects: "Projets",
-        copyright: "© 2026 Marga. Tous Droits Réservés.",
-        copyright2: "Tous Gauches Disponibles.",
+        copyright: "© 2026 Marga. Tous droits réservés.",
+        copyright2: "Tous gauches disponibles.",
         greeting: "Bienvenue sur mon site, vous allez grave kiffer.",
     }
 };

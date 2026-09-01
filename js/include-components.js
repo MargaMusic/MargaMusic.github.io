@@ -6,11 +6,16 @@ const header = `
     </div>
     <a href="index.html" class="logo"
         style="font-size: 2em; font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">Marga</a>
-    <ul>
-        <li><a href="index.html" data-translate="home"></a></li>
-        <li><a href="about.html" data-translate="about"></a></li>
-        <li><a href="projects.html" data-translate="projects"></a></li>
-    </ul>
+    
+    
+    <nav class="main-navigation">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">&#9776;</button>
+        <ul class="nav-links" role="menuitemlist">
+            <li><a href="index.html" data-translate="home">Home</a></li>
+            <li><a href="about.html" data-translate="about">About</a></li>
+            <li><a href="projects.html" data-translate="projects">Projects</a></li>
+        </ul>
+    </nav>
 </header>
 `
 
