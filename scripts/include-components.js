@@ -4,16 +4,15 @@ const header = `
         <img src="./images/fr.svg" title="Français" alt="Français" id="fr" onclick="setLanguage('fr')">
         <img src="./images/en.svg" title="Anglais" alt="English" id="en" onclick="setLanguage('en')">
     </div>
-    <a href="index.html" class="logo"
-        style="font-size: 2em; font-weight: bold; letter-spacing: 1px; text-transform: uppercase;">Marga</a>
-    
+    <a href="index.html" class="logo" style="font-size: 2em; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; color: black;">Marga</a>
     
     <nav class="main-navigation">
         <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">&#9776;</button>
         <ul class="nav-links" role="menuitemlist">
             <li><a href="index.html" data-translate="home"></a></li>
-            <li><a href="music.html" data-translate="music"></a></li>
+            <li><a href="discography.html" data-translate="discography"></a></li>
             <li><a href="about.html" data-translate="about"></a></li>
+            <!-- <li><a href="tools.html" data-translate="tools"></a></li> -->
         </ul>
     </nav>
 </header>
