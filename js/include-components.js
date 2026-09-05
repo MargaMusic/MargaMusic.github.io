@@ -11,9 +11,9 @@ const header = `
     <nav class="main-navigation">
         <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">&#9776;</button>
         <ul class="nav-links" role="menuitemlist">
-            <li><a href="index.html" data-translate="home">Home</a></li>
-            <li><a href="about.html" data-translate="about">About</a></li>
-            <li><a href="projects.html" data-translate="projects">Projects</a></li>
+            <li><a href="index.html" data-translate="home"></a></li>
+            <li><a href="music.html" data-translate="music"></a></li>
+            <li><a href="about.html" data-translate="about"></a></li>
         </ul>
     </nav>
 </header>
