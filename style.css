@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
 /* --- GLOBAL STYLING RESET --- */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}    
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
-}
+}    
 
 /* --- NAVIGATION BAR STYLING --- */
 .navbar {
@@ -23,14 +25,14 @@ body {
     position: relative;
     top: 0;
     z-index: 100;
-}
+}    
 
 .lang-switcher {
     margin-right: auto;
     display: flex;
     border: none;
     padding: 2px;
-}
+}    
 
 .lang-switcher img {
     cursor: pointer;
@@ -38,13 +40,21 @@ body {
     height: auto;
     border: 2px solid transparent;
     transition: transform 0.1s;
-}
+}    
 
 .lang-switcher img:hover {
     transform: scale(1.1);
-}
+}    
 
 .logo {
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -69,59 +79,15 @@ body {
     gap: 20px;
 }
 
-.navbar a {
+.main-navigation a {
     text-decoration: none;
     color: #444;
     font-weight: 500;
     transition: color 0.3s;
 }
 
-.navbar a:hover {
+.main-navigation a:hover {
     color: #000;
-}
-
-@media screen and (max-width: 768px) {
-
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        font-size: 1.5rem;
-        cursor: pointer;
-    }
-
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        position: absolute;
-        top: 90px;
-        left: 0;
-        background-color: #eee;
-        gap: 0px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav-links.is-open {
-        display: flex;
-    }
-
-    .nav-links li {
-        width: 100%;
-        text-align: center;
-        border-bottom: 1px solid #ccc;
-        padding: 15px;
-    }
-
-    .nav-links a {
-        padding: 10px 25%;
-    }
-
-    body.nav-open {
-        overflow: hidden;
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
 }
 
 /* --- MAIN LAYOUT & CONTENT STYLING --- */
@@ -188,13 +154,11 @@ footer {
 }
 
 .music-card {
-    background: white;
     display: flex;
     align-items: center;
     padding: 10px;
     margin-bottom: 30px;
-    border-left: 4px solid #000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.1);
 }
 
 .music-card p {
@@ -202,6 +166,7 @@ footer {
 }
 
 .left-music {
+    min-width: 150px;
     flex-grow: 1;
 }
 
@@ -211,7 +176,8 @@ footer {
 }
 
 .cover {
-    width: 250px;
+    max-width: 250px;
+    width: 100%;
     margin-left: auto;
 }
 
@@ -223,4 +189,48 @@ footer {
     width: 500px;
     display: block;
     margin: auto;
+}
+
+@media screen and (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        background-color: #eee;
+        gap: 0px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.is-open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ccc;
+        padding: 15px;
+    }
+
+    .nav-links a {
+        padding: 10px 25%;
+    }
+
+    body.nav-open {
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
 }

@@ -4,7 +4,7 @@ const header = `
         <img src="./images/fr.svg" title="Français" alt="Français" id="fr" onclick="setLanguage('fr')">
         <img src="./images/en.svg" title="Anglais" alt="English" id="en" onclick="setLanguage('en')">
     </div>
-    <a href="index.html" class="logo" style="font-size: 2em; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; color: black;">Marga</a>
+    <a href="index.html" class="logo">Marga</a>
     
     <nav class="main-navigation">
         <button class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">&#9776;</button>
