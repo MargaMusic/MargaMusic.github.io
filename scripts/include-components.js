@@ -12,7 +12,7 @@ const header = `
             <li><a href="index.html" data-translate="home"></a></li>
             <li><a href="discography.html" data-translate="discography"></a></li>
             <li><a href="about.html" data-translate="about"></a></li>
-            <!-- <li><a href="tools.html" data-translate="tools"></a></li> -->
+            <li><a href="tools.html" data-translate="tools"></a></li>
         </ul>
     </nav>
 </header>

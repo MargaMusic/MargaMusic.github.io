@@ -1,0 +1,90 @@
+<!--I developed this tool a while ago when I didn't know how to code, please don't judge the code-->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marga - Musehint</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="container">
+        <section id="musehint">
+            <a href="tools.html" data-translate="back"></a>
+
+            <h2>Musehint</h2>
+
+            <p data-translate="musehint_desc"></p>
+
+            <!--TODO circle of fifths selector-->
+            <h3 data-translate="musehint_root"></h3>
+            <div id="radios">
+                <nav id="rootRadio">
+                    <input type="radio" id="r0" name="root" value="0" checked="checked" />
+                    <label for="r0">C</label>
+                    <input type="radio" id="r1" name="root" value="1" />
+                    <label for="r1">D♭</label>
+                    <input type="radio" id="r2" name="root" value="2" />
+                    <label for="r2">D</label>
+                    <input type="radio" id="r3" name="root" value="3" />
+                    <label for="r3">E♭</label>
+                    <input type="radio" id="r4" name="root" value="4" />
+                    <label for="r4">E</label>
+                    <input type="radio" id="r5" name="root" value="5" />
+                    <label for="r5">F</label>
+                    <input type="radio" id="r6" name="root" value="6" />
+                    <label for="r6">F♯</label>
+                    <input type="radio" id="r7" name="root" value="7" />
+                    <label for="r7">G</label>
+                    <input type="radio" id="r8" name="root" value="8" />
+                    <label for="r8">A♭</label>
+                    <input type="radio" id="r9" name="root" value="9" />
+                    <label for="r9">A</label>
+                    <input type="radio" id="r10" name="root" value="10" />
+                    <label for="r10">B♭</label>
+                    <input type="radio" id="r11" name="root" value="11" />
+                    <label for="r11">B</label>
+                </nav>
+
+            <h3 data-translate="musehint_mode"></h3>
+                <nav id="scaleRadio">
+                    <input type="radio" id="s0" name="scale" value="ionian" checked="checked" />
+                    <label for="s0" data-translate="musehint_ionian"></label>
+                    <input type="radio" id="s1" name="scale" value="dorian" />
+                    <label for="s1" data-translate="musehint_dorian"></label>
+                    <input type="radio" id="s2" name="scale" value="phrygian" />
+                    <label for="s2" data-translate="musehint_phrygian"></label>
+                    <input type="radio" id="s3" name="scale" value="lydian" />
+                    <label for="s3" data-translate="musehint_lydian"></label>
+                    <input type="radio" id="s4" name="scale" value="mixolydian" />
+                    <label for="s4" data-translate="musehint_mixolydian"></label>
+                    <input type="radio" id="s5" name="scale" value="aeolian" />
+                    <label for="s5" data-translate="musehint_aeolian"></label>
+                    <input type="radio" id="s6" name="scale" value="locrian" />
+                    <label for="s6" data-translate="musehint_locrian"></label>
+                </nav>
+            </div>
+
+            <!--TODO results in table-->
+            <h3 data-translate="musehint_notes"></h3>
+            <p id="notesScale"></p>
+
+            <h3 data-translate="musehint_chords"></h3>
+            <p id="chordsScale"></p>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="scripts/musehint.js"></script>
+    <script src="scripts/include-components.js" type="text/javascript"></script>
+    <script src="scripts/translate-content.js" type="text/javascript"></script>
+    <script src="scripts/main-orchestrator.js" type="text/javascript"></script>
+    <script src="scripts/responsive.js" type="text/javascript"></script>
+</body>
+
+</html>
